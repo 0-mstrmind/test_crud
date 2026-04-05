@@ -4,6 +4,9 @@
   "private": true,
   "description": "MERN Stack CRUD Application - pnpm monorepo",
   "scripts": {
+    "start": "pnpm --parallel -r run start",
+    "start:server": "pnpm --filter crud-server run start",
+    "start:client": "pnpm --filter crud-client run start",
     "dev": "pnpm --parallel -r run dev",
     "dev:server": "pnpm --filter crud-server run dev",
     "dev:client": "pnpm --filter crud-client run dev",
