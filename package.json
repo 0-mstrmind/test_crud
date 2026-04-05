@@ -1,0 +1,13 @@
+{
+  "name": "mern-crud",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN Stack CRUD Application - pnpm monorepo",
+  "scripts": {
+    "dev": "pnpm --parallel -r run dev",
+    "dev:server": "pnpm --filter crud-server run dev",
+    "dev:client": "pnpm --filter crud-client run dev",
+    "build": "pnpm --filter crud-client run build",
+    "install-all": "pnpm install"
+  }
+}
